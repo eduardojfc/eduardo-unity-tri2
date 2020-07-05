@@ -60,6 +60,36 @@ Transform:
   m_Father: {fileID: 7904610177145043869}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6591436158911038330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4935623280729525827}
+  m_Layer: 0
+  m_Name: CastPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4935623280729525827
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6591436158911038330}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.03, y: 0.912, z: -0.073}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7904610177145043869}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7904610177145043857
 GameObject:
   m_ObjectHideFlags: 0
@@ -75,8 +105,8 @@ GameObject:
   - component: {fileID: 5022140937014577719}
   - component: {fileID: 8236668911440885293}
   - component: {fileID: 7904610177145043860}
-  - component: {fileID: 7904610177145043863}
-  - component: {fileID: 3407469398548538517}
+  - component: {fileID: 756404596472090309}
+  - component: {fileID: 1873120496296488035}
   m_Layer: 0
   m_Name: Infantry
   m_TagString: Untagged
@@ -98,6 +128,7 @@ Transform:
   - {fileID: 1659146591713780477}
   - {fileID: 7692294985683712254}
   - {fileID: 1034905536087796148}
+  - {fileID: 4935623280729525827}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -203,7 +234,7 @@ MonoBehaviour:
   damageEffects: {fileID: 2180754341959426579, guid: 07be4cb955ba8cb40aeeb7fb351672a4,
     type: 3}
   dieEffect: {fileID: 0}
---- !u!114 &7904610177145043863
+--- !u!114 &756404596472090309
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -212,21 +243,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 7904610177145043857}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e41b90392104ea1459fa928d629763b6, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c620a9ecf5d8804fa6738ce576b0882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   angularSpeed: 6
   contactRadius: 0.5
   ofenseStats:
     damage: 10
-    attackSpeed: 1.2
+    attackSpeed: 1
   attackRange: 4
-  attackDelay: 0.5
-  castTransform: {fileID: 0}
+  attackDelay: 0.8
+  castTransform: {fileID: 4935623280729525827}
   enemyLayers:
   - Creep
   enemiesToAttack: []
---- !u!114 &3407469398548538517
+  projectilePrefab: {fileID: 4629288360708534029, guid: 2a8b13604f4678d42bd690d7246e77c7,
+    type: 3}
+--- !u!114 &1873120496296488035
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

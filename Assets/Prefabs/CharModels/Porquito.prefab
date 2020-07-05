@@ -1498,7 +1498,7 @@ GameObject:
   - component: {fileID: 487629110109361650}
   - component: {fileID: 8082687775564978236}
   m_Layer: 10
-  m_Name: porquito
+  m_Name: Porquito
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1530,7 +1530,7 @@ Animator:
   m_GameObject: {fileID: 487629110116624272}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: fcc310a3879cebe49827aa3949d842ac, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3f3147405c5a58545890b004fd05531c, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

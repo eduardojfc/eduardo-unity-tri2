@@ -450,7 +450,7 @@ GameObject:
   - component: {fileID: 1444213885834833276}
   - component: {fileID: 7648742869667416146}
   m_Layer: 11
-  m_Name: gatito
+  m_Name: Gatito
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -482,7 +482,7 @@ Animator:
   m_GameObject: {fileID: 1444213885825343164}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 03c692338e9b4cb47a63133088377786, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 517d898fcfe101b4d8c56c18ea82540f, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
